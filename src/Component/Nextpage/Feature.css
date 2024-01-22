@@ -1,0 +1,165 @@
+.feature{
+    padding: 20px 15%;
+}
+
+.feature h1{
+    text-transform: capitalize;
+    color: #121213CC;
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.feature .items .img-slide{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    align-items: center;
+}
+
+.fees{
+    padding: 0 10%;
+}
+.fees h1{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    line-height: 1.1;
+    font-weight: 500;
+    color: #121213CC;
+    margin-bottom: 30px;
+}
+
+.fees-low{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 30px;
+}
+
+.fees-low .low{
+    background-color: #050522;
+    height: 300px;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.fees-low .low .imgs{
+    background: #5FE0CB;
+    padding: 10px 20px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fees-low .low .imgs img{
+    width: 100%;
+}
+
+.fees-low .low h2{
+    color: #F3F3F3;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+.fees-low .low p{
+    color: #F3F3F3CC;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.fees-low .low:nth-child(2){
+    background-color: #F3F3F3;
+    height: 300px;
+    border-radius: 10px;
+    padding: 67px;
+}
+
+.fees-low .low:nth-child(2) .imgs{
+    background: #075DFF;
+    padding: 10px 20px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fees-low .low:nth-child(2) h2{
+    color: #050422;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+.fees-low .low:nth-child(2) p{
+    color: #50568E;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.fees-low .low:nth-child(3){
+    background-color: #F3F3F3;
+    height: 300px;
+    border-radius: 10px;
+    padding: 67px;
+}
+
+.fees-low .low:nth-child(3) .imgs{
+    background: #075DFF;
+    padding: 10px 20px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fees-low .low:nth-child(3) h2{
+    color: #050422;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+.fees-low .low:nth-child(3) p{
+    color: #50568E;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.map-region{
+    padding: 10px 5%;
+    background-color: #F6F6F9;
+}
+
+.map{
+    background: url(/src/image/Map@400x\ 2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+
+.map img{
+    width: 85%;
+}

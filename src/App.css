@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Rethink+Sans:wght@400;500;600;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Rethink Sans', sans-serif;
+}
+
+body{
+  background: #fff;
+}
+
+img{
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}

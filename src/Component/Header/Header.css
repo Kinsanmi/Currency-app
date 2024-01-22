@@ -1,0 +1,100 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 10%;
+    z-index: 100;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px 0px 3px #5A50FE;
+}
+
+.container img{
+    width: 140px;
+}
+
+.container .navbar{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 1.5rem;
+}
+
+.container .navbar li a{
+    color: #000;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.currency{
+    padding: 5px 10%;
+}
+
+.currency .needs{
+    background: #5A50FE;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* align-items: center; */
+    gap: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    height: 80vh;
+    padding: 70px 10px 0px 70px;
+}
+
+.currency .needs .money h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 40px 0;
+}
+
+.currency .needs .money h1 span{
+    color: red;
+}
+
+.currency .needs .money p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.apps{
+    margin-top: 100px;
+}
+
+.apps .available{
+    display: flex;
+    align-self: center;
+}
+
+.apps .available .store img{
+    width: 120px;
+    height: auto;
+}
+
+.currency .needs .money .download{
+    margin-top: 20px;
+}
+
+.currency .needs .money .download a{
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px 30px;
+    color: #5A50FE;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+
+
+.currency .needs img{
+    width: 73%;
+}
