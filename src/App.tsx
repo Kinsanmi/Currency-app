@@ -1,12 +1,12 @@
 
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import './App.css'
 import { Header } from './Component/Header/Header'
 import { Feature } from './Component/Nextpage/Feature';
 
 function App(): JSX.Element {
 
-  const [loading, setloading] = useState<boolean>(false);
+  // const [loading, setloading] = useState<boolean>(false);
 
 
   const fetchData = () =>{
@@ -23,15 +23,15 @@ function App(): JSX.Element {
 
 
   const request = () =>{
-    if(loading){
-      return(
-        <>
-        <div>
-          <div>Loading..</div>
-        </div>
-        </>
-      )
-    }
+    // if(loading){
+    //   return(
+    //     <>
+    //     <div>
+    //       <div>Loading..</div>
+    //     </div>
+    //     </>
+    //   )
+    // }
 
     return (
       <>
