@@ -1,0 +1,384 @@
+.exchange-rate{
+    padding: 20px 10%;
+}
+
+.exchange-rate .exchange{
+    background: #F5E5FF;
+    border-radius: 10px;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.3rem;
+    padding: 0 100px;
+}
+
+.exchange-rate .exchange .volume h1{
+    font-size: 40px;
+    color: #040052;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.exchange-rate .exchange .volume p{
+    font-size: 17px;
+    color: #70709F;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+.amount{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.amount .usd{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 380px;
+    background: #fff;
+    transform: scale(1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #ccc,
+                0px 0px 10px #D2D0D040;
+}
+
+
+.amount .usd img{
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.amount .usd .usd-amt h3{
+    color: #848484;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    line-height: 20px;
+}
+
+
+.amount .usd .usd-amt h6{
+    color: #121212;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 3px;
+    letter-spacing: 0.4px;
+}
+
+.amount .arrow{
+    background: #fff;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.amount .arrow .nav-arrow{
+    color: #109CF1;
+    font-size: 17px;
+}
+
+
+.amount .ugx{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    width: 300px;
+    background: #fff;
+    transform: scale(1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc,
+                 0px 0px 10px #D2D0D040;
+}
+
+
+
+.amount .ugx img{
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+
+.amount .ugx .usd-amt h3{
+    color: #848484;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    line-height: 20px;
+}
+
+
+.amount .ugx .usd-amt h6{
+    color: #121212;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 3px;
+    letter-spacing: 0.4px;
+}
+
+
+
+
+.amount .ngn{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    width: 300px;
+    background: #fff;
+    transform: scale(1);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px #ccc,
+                0px 0px 10px #D2D0D040;
+}
+
+
+
+.amount .ngn img{
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+
+.amount .ngn .usd-amt h3{
+    color: #848484;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    line-height: 20px;
+}
+
+
+.amount .ngn .usd-amt h6{
+    color: #121212;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 3px;
+    letter-spacing: 0.4px;
+}
+
+
+
+
+
+/* VIRTUAL CARD */
+
+.exchange-rate .debit{
+    background: #F3F3F3;
+    border-radius: 10px;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    padding: 0 100px;
+}
+
+.exchange-rate .debit .debit-card h2{
+    font-size: 40px;
+    color: #040052;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.exchange-rate .debit .debit-card p{
+    font-size: 17px;
+    color: #70709F;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+
+
+
+
+/* STOCK TRADING */
+
+.exchange-rate .stock{
+    background: #ECEBFF;
+    border-radius: 10px;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    padding: 0 100px;
+}
+
+.exchange-rate .stock .stock-trade h2{
+    font-size: 40px;
+    color: #040052;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.exchange-rate .stock .stock-trade p{
+    font-size: 17px;
+    color: #70709F;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+
+.exchange-rate .stock .stock-trade a{
+    background: #5a50fe;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    display: flex;
+    align-items: center;
+    width: 220px;
+    margin-top: 20px;
+}
+
+
+.exchange-rate .stock .stock-trade a .arrow-icon{
+    font-size: 20px;
+    margin-left: 8px;
+    animation: anime 1s linear infinite alternate;  
+}
+
+
+.exchange-rate .stock .card img{
+    width: 70%;
+}
+
+@keyframes anime {
+    0%{
+        transform: translateX(-6px);
+        /* transform: scale(1.5); */
+    }
+    100%{
+        transform: translateX(0px);
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+@media screen and (max-width:480px) {
+    .exchange-rate .exchange {
+        border-radius: 6px;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0 10px;
+    }
+
+    .exchange-rate {
+        padding: 10px 2%;
+    }
+
+    .exchange-rate .exchange .volume h1 {
+        font-size: 25px;
+    }
+
+    .exchange-rate .exchange .volume p {
+        font-size: 15px;
+    }
+
+    .amount .usd {
+        display: flex;
+        align-items: center;
+        padding: 6px 15px;
+        width: 280px;
+    }
+
+    .amount .usd .usd-amt h3 {
+        font-size: 15px;
+    }
+
+    .amount .usd .usd-amt h6 {
+        font-size: 14px;
+    }
+
+    .amount .arrow {
+        margin: 20px 0;
+    }
+
+    .amount .ugx {
+        padding: 5px 14px;
+        width: 220px;
+    }
+
+    .amount .ugx .usd-amt h3 {
+        font-size: 14px;
+    }
+
+    .amount .ugx .usd-amt h6 {
+        font-size: 13px;
+    }
+
+    .amount .ngn {
+        padding: 5px 14px;
+        width: 220px;
+    }
+
+    .amount .ngn .usd-amt h3 {
+        font-size: 14px;
+    }
+
+    .amount .ngn .usd-amt h6 {
+        font-size: 13px;
+    }
+
+
+    .exchange-rate .debit {
+        border-radius: 8px;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0.5rem;
+        padding: 0 10px;
+    }
+
+    .exchange-rate .debit .debit-card h2 {
+        font-size: 25px;
+    }
+
+    .exchange-rate .debit .debit-card p {
+        font-size: 15px;
+    }
+
+    .exchange-rate .stock {
+        border-radius: 8px;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0.5rem;
+        padding: 0 2px;
+    }
+
+    .exchange-rate .stock .stock-trade h2 {
+        font-size: 25px;
+    }
+
+    .exchange-rate .stock .stock-trade p {
+        font-size: 15px;
+    }
+
+    .exchange-rate .stock .stock-trade a {
+        border-radius: 8px;
+        font-size: 15px;
+        width: 210px;
+        margin-top: 10px;
+    }
+
+
+}

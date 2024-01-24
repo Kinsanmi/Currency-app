@@ -13,6 +13,10 @@
     width: 140px;
 }
 
+.hamburger{
+    display: none;
+}
+
 .container .navbar{
     display: flex;
     align-items: center;
@@ -53,7 +57,7 @@
 }
 
 .currency .needs .money h1 span{
-    color: red;
+    color: #F39F19;
 }
 
 .currency .needs .money p{
@@ -86,15 +90,136 @@
 .currency .needs .money .download a{
     background: #fff;
     border-radius: 6px;
-    padding: 10px 30px;
+    padding: 10px 20px;
     color: #5A50FE;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.4px;
+    display: flex;
+    align-items: center;
+    width: 260px;
 }
 
 
+.currency .needs .money .download a .arrow-icon{
+    font-size: 20px;
+    margin-left: 8px;
+    animation: anime 1s linear infinite alternate;  
+}
+
+@keyframes anime {
+    0%{
+        transform: translateX(-6px);
+        /* transform: scale(1.5); */
+    }
+    100%{
+        transform: translateX(0px);
+        transform: scale(1);
+    }
+}
 
 .currency .needs img{
     width: 73%;
+}
+
+
+@media screen and (max-width:480px) {
+    .container {
+        padding: 12px 2%;
+    }
+
+    .container .navbar {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 80%;
+        background-color: #D8D6FF;
+        height: 100vh;
+        flex-direction: column;
+        transform: translateX(-100%);
+        z-index: 200;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .container .navbar.open{
+        transform: translateX(0%);
+    }
+    
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger div{
+        width: 25px;
+        height: 3px;
+        margin: 3px;
+        background-color: #000;
+        transition: 0.3s ease-in-out;
+    }
+
+    .hamburger.open .line1{
+        transform: translate(-1px, 6px) rotate(45deg);
+    }
+    .hamburger.open .line2{
+        opacity: 0;
+    }
+    .hamburger.open .line3{
+        transform: translate(-1px, -6px) rotate(-45deg);
+    }
+    
+    
+    .navbar li{
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    .navbar li a{
+        display: block;
+        padding: 10px 0px;
+        text-align: center;
+        transition: 0.3s ease;
+    }
+    .navbar li a:hover{
+        background-color: #5A50FE;
+        color: #fff;
+    }
+
+    .currency .needs {
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+        border-radius: 8px;
+        padding:10px ;
+    }
+
+    .currency .needs .money h1 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 40px 0;
+    }
+
+    .currency .needs .money .download a {
+        padding: 10px;
+        font-size: 15px;
+        width: 240px;
+    }
+
+    .currency {
+        padding: 5px 2%;
+    }
+
+    .currency .needs img {
+        width: 73%;
+        display: none;
+    }
+
+    .apps {
+        margin-top: 10px;
+    }
+
+    .currency .needs .money h1 {
+        font-size: 28px;
+        margin: 25px 0;
+    }
 }

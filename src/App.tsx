@@ -1,5 +1,5 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { Header } from './Component/Header/Header'
 import { Feature } from './Component/Nextpage/Feature';
@@ -10,13 +10,16 @@ function App(): JSX.Element {
 
 
   const fetchData = () =>{
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       setTimeout(()=>{
         resolve({})
       },3500)
     })
-    
   }
+
+  useEffect(()=>{
+    fetchData()
+  },[])
 
 
   const request = () =>{

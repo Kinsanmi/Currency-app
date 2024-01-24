@@ -1,23 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 
 export const Header:React.FC = ():JSX.Element => {
+
+    const [open, setOpen] = useState<boolean>(false);
 
     const headerSection = () =>{
         return (
             <>
             <header>
                 <div className="container">
-                    <img src="https://res.cloudinary.com/dkngsthge/image/upload/v1705932589/eversend_logo_1_df77qf.png" alt="eversend logo" />
+                    <img src="https://res.cloudinary.com/dkngsthge/image/upload/v1705932589/eversend_logo_1_df77qf.png" alt="ever-send logo" />
 
-                    <ul className='navbar'>
+                    <ul className={open ? 'navbar open' : 'navbar'} onFocus={() => setOpen(false)}>
                         <li><a href="#">Business</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">FAQS</a></li>
                         <li><a href="#">Careers</a></li>
                     </ul>
+
+                    <div className={open ? "hamburger open" : "hamburger"} onClick={() => setOpen(!open)}>
+                        <div className="line1"></div>
+                        <div className="line2"></div>
+                        <div className="line3"></div>
+                    </div>
                 </div>
 
                 <div className="currency">
@@ -39,7 +48,7 @@ export const Header:React.FC = ():JSX.Element => {
                             </div>
 
                             <div className='download'>
-                                <a href="">Download EverSend app</a>
+                                <a href="">Download EverSend app <IoIosArrowRoundForward className='arrow-icon' /></a>
                             </div>
                         </div>
                             <img src="https://res.cloudinary.com/dkngsthge/image/upload/v1705932338/phone_frame_tzop6u.png" alt="currency app logo" />

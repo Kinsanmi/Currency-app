@@ -1,6 +1,7 @@
 import React from 'react'
 import { feature, money } from '../../Product/Product';
 import './Feature.css';
+import { Financial } from './Financial';
 
 export interface Featured {
     id: number;
@@ -50,7 +51,9 @@ export const Feature:React.FC = () => {
             <>
             <section className='fees'>
                 <h1>Manage your money in the palm <br />of your hand</h1>
-                <div className="fees-low">
+                <div className="range">
+                    <div className="home-campaign"></div>
+                    <div className="fees-low">
                     {money.map((manage)=>{
                         return (
                             <>
@@ -65,13 +68,19 @@ export const Feature:React.FC = () => {
                         )
                     })}
                 </div>
+                </div>
+                
+                
             </section>
+            
 
             <section className='map-region'>
                 <div className="map">
                     <img src="https://res.cloudinary.com/dkngsthge/image/upload/v1705953504/customers_group_kgeuvg.png" alt="" />
                 </div>
             </section>
+
+            <Financial />
             </>
         )
     }
@@ -79,7 +88,6 @@ export const Feature:React.FC = () => {
     <>
     {featureData()}
     {services()}
-    
     </>
   )
 }

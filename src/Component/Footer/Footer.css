@@ -1,0 +1,56 @@
+.footer{
+    padding: 30px 10%;
+    background: #F4F5F6;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.footer .ever-logo h2{
+    color: #000;
+    font-size: 15px;
+}
+
+.footer .context{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .context h2{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.footer .context a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    color: #50568E;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.footer .context a .media-icon{
+    font-size: 20px;
+}
+
+.footer .context a:hover{
+    color: #5a50fe;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 30px 5%;
+        grid-template-columns: repeat(1,1fr);
+    }
+}

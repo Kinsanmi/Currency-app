@@ -21,6 +21,10 @@
 .fees{
     padding: 0 10%;
 }
+
+.fees .range{
+    display: flex;
+}
 .fees h1{
     text-align: center;
     font-size: 30px;
@@ -37,6 +41,7 @@
     align-items: center;
     gap: 2rem;
     margin-bottom: 30px;
+    margin-left: 20px;
 }
 
 .fees-low .low{
@@ -163,3 +168,290 @@
 .map img{
     width: 85%;
 }
+
+
+
+
+
+
+/* Financial section */
+
+.multi{
+    padding: 20px 10%;
+    background-color: #fff;
+}
+
+.multi .wallet h5{
+    font-size: 18px;
+    color: #5A50FE;
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.multi .wallet h1{
+    text-align: center;
+    color: #040052;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+
+}
+
+.multi .wallet p{
+    text-align: center;
+    color: #4A5289;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.multi .wallet .wallet-rate{
+    background: #D8D6FF;
+    border-radius: 10px;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    padding: 0px 80px;
+}
+
+
+.multi .wallet .wallet-rate .rate-app{
+    position: relative;
+    padding: 0 60px;
+    /* background-color: red; */
+    width: 100%;
+}
+
+.multi .wallet .wallet-rate .rate-app .rate-text{
+    background-color: #FFFFFF80;
+    opacity: 0.8;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.multi .wallet .wallet-rate .rate-app .rate-text .time-rate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.multi .wallet .wallet-rate .rate-app .rate-text .time-rate .date{
+    color: #4A5289;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    line-height: 1.2;
+}
+
+.multi .wallet .wallet-rate .rate-app .rate-text h3{ 
+    color: #70709F;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    width: 300px;
+    margin-top: 8px;
+}
+
+.multi .wallet .wallet-rate .rate-app img{
+    width: 70%;
+}
+
+.multi .wallet .wallet-rate .rate-fee h2{
+    font-size: 40px;
+    color: #040052;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.3px;
+}
+
+.multi .wallet .wallet-rate .rate-fee h6{
+    font-size: 20px;
+    color: #70709F;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+}
+
+
+
+.home-campaign{
+    background: linear-gradient(transparent, rgb(51, 179, 174), rgb(51, 179, 174), transparent);
+    transition-delay: 0ms;
+    height: 600px;
+    width: 4px;
+    transform:  rotate3d(135deg), scale(5);
+
+}
+
+.home{
+    transition-delay: 1100ms;
+    background: linear-gradient(transparent, #f778ba, #f778ba, transparent);
+    width: 3px;
+    height: 200px;
+}
+
+
+
+.trigger{
+    display: flex;
+}
+
+
+.trigger .home-trigger{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .fees-low {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+
+    .fees {
+        padding: 0 2%;
+    }
+
+    .fees-low .low:nth-child(2) {
+        border-radius: 6px;
+        padding: 20px;
+    }
+
+    .fees-low .low:nth-child(2) h2 {
+        font-size: 20px;
+    }
+
+    .fees-low .low:nth-child(2) .imgs {
+        padding: 10px 15px;
+        width: 50px;
+        height: 50px;
+    }
+    .fees-low .low:nth-child(3) {
+        border-radius: 6px;
+        padding: 20px;
+    }
+
+    .fees-low .low:nth-child(3) h2 {
+        font-size: 20px;
+    }
+
+    .fees-low .low:nth-child(3) p {
+        color: #50568E;
+        font-size: 15px;
+    }
+
+    .fees-low .low:nth-child(3) .imgs {
+        padding: 10px 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .fees-low .low {
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    .fees-low .low .imgs {
+        background: #5FE0CB;
+        padding: 10px 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .fees-low .low h2 {
+        color: #F3F3F3;
+        font-size: 20px;
+    }
+
+    .fees-low .low p {
+        font-size: 15px;
+    }
+
+    .fees h1 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .map {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .map img {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .multi .wallet h5 {
+        font-size: 17px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    .multi .wallet h1 {
+        font-size: 22px;
+    }
+
+    .multi .wallet p {
+        color: #4A5289;
+        font-size: 16px;
+        margin: 15px 0;
+    }
+
+    .multi {
+        padding: 10px 2%;
+    }
+
+    .multi .wallet .wallet-rate {
+        border-radius: 8px;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1.5rem;
+        padding: 0px 20px;
+    }
+
+    .multi .wallet .wallet-rate .rate-app {
+        padding: 0 10px;
+    }
+
+    .multi .wallet .wallet-rate .rate-app .rate-text {
+        top: 70px;
+        padding: 6px;
+    }
+
+    .multi .wallet .wallet-rate .rate-fee h2 {
+        font-size: 25px;
+    }
+
+    .multi .wallet .wallet-rate .rate-fee h6 {
+        font-size: 16px;
+    }
+
+    .feature h1 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .feature {
+        padding: 15px 2%;
+    }
+}
+
+

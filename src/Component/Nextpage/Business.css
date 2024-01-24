@@ -1,0 +1,212 @@
+.biz{
+    background: #080540;
+    padding: 0px 5%;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.3rem;
+}
+
+
+.biz .biz-trade h2{
+    font-size: 35px;
+    color: #FFFFFF;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.biz .biz-trade p{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+
+.biz .biz-trade a{
+    background: #5a50fe;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    display: flex;
+    align-items: center;
+    width: 140px;
+    margin-top: 35px;
+}
+
+
+.biz .biz-trade a .arrow-icon{
+    font-size: 20px;
+    margin-left: 8px;
+    animation: anime 1s linear infinite alternate;  
+}
+
+
+.biz .biz-trade .biz-img img{
+    width: 70%;
+}
+
+@keyframes anime {
+    0%{
+        transform: translateX(-6px);
+        /* transform: scale(1.5); */
+    }
+    100%{
+        transform: translateX(0px);
+        transform: scale(1);
+    }
+}
+
+
+
+/* GET STARTED */
+
+.starter{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1rem;
+    padding: 0px 10%;
+    margin-top: 70px;
+    width: 100%;
+}
+
+.starter .steps h1{
+    color: #040052;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.starter .steps .steps-app .app{
+    display: flex;
+    align-self: center;
+    gap: 1rem;   
+}
+
+.starter .steps .steps-app .app .number{
+    color: #50568E;
+    background: #F4F6F7;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.starter .steps .steps-app .app .app-style h6{
+    color: #70709F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.6px;  
+}
+
+.starter .steps .steps-app .app .app-style p{
+    color: #70709F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.6px; 
+    margin-bottom: 20px; 
+}
+
+.starter .steps .steps-app a{
+    background: #5a50fe;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    display: flex;
+    align-items: center;
+    width: 280px;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+
+.starter .steps .steps-app a:hover{
+    background: #fff;
+    color: #5a50fe;
+}
+
+
+
+.starter .steps .steps-app a .arrow-icon{
+    font-size: 24px;
+    margin-left: 8px;
+    animation: anime 1s linear infinite alternate;  
+}
+
+
+@keyframes anime {
+    0%{
+        transform: translateX(-6px);
+        /* transform: scale(1.5); */
+    }
+    100%{
+        transform: translateX(0px);
+        transform: scale(1);
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .biz {
+        padding: 0px 2%;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1.1rem;
+    }
+
+    .biz .biz-trade h2 {
+        font-size: 25px;
+
+    }
+
+    .biz .biz-trade p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .starter {
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px 2%;
+    }
+
+    .starter .steps h1 {
+        color: #040052;
+        font-size: 20px;
+    }
+
+    .starter .steps .steps-app .app {
+        gap: 0.5rem;
+    }
+
+    .starter .steps .steps-app .app .app-style h6 {
+        font-size: 15px;
+    }
+
+    .starter .steps .steps-app .app .number {
+        width: 30px;
+        height: 30px;
+    }
+
+    .starter .steps .steps-app a {
+        border-radius: 8px;
+        padding: 8px;
+        font-size: 15px;
+        width: 265px;
+        margin-top: 10px;
+    }
+}
