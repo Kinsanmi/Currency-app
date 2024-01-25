@@ -72,7 +72,7 @@ export const Exchange:React.FC = () => {
                     </div>
 
                     <div className="card">
-                        <img src="https://res.cloudinary.com/dkngsthge/image/upload/v1705932336/Phone_frame_1_dxzpr8.png" alt="Debit card" />
+                        <img src="https://res.cloudinary.com/dkngsthge/image/upload/v1706207743/stock-trading-feature_1_agq3my.png" alt="Debit card" />
                     </div>
                 </div>
             </section>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.css';
 import { IoIosArrowRoundForward } from "react-icons/io";
 
@@ -7,11 +7,27 @@ export const Header:React.FC = ():JSX.Element => {
 
     const [open, setOpen] = useState<boolean>(false);
 
+    const [scroll, setScroll] =useState<boolean>(false);
+
+    const scrollEffect = () =>{
+        if(window.scrollY > 10){
+            setScroll(true);
+        } else { setScroll(false)}
+    }
+
+    useEffect(()=>{
+        window.addEventListener("scroll", scrollEffect);
+
+        return()=>{
+            window.removeEventListener("scroll", scrollEffect)
+        }
+    },[])
+
     const headerSection = () =>{
         return (
             <>
             <header>
-                <div className="container">
+                <div className={scroll ? "container down": "container"}>
                     <img src="https://res.cloudinary.com/dkngsthge/image/upload/v1705932589/eversend_logo_1_df77qf.png" alt="ever-send logo" />
 
                     <ul className={open ? 'navbar open' : 'navbar'} onFocus={() => setOpen(false)}>

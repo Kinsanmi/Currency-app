@@ -16,14 +16,6 @@ export const feature = [
             id: 4,
             image: "https://res.cloudinary.com/dkngsthge/image/upload/v1705932338/logo_4_iqxkbp.png",
         },
-        {
-            id: 5,
-            image: "https://res.cloudinary.com/dkngsthge/image/upload/v1705932337/logo_5_rovvuh.png",
-        },
-        {
-            id: 6,
-            image: "https://res.cloudinary.com/dkngsthge/image/upload/v1705932336/logo_7_zwwnp7.png",
-        },
     ]},
 ]
 

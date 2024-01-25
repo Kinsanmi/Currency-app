@@ -170,7 +170,7 @@
     }
 
     .biz .biz-trade h2 {
-        font-size: 25px;
+        font-size: 20px;
 
     }
 
@@ -197,10 +197,24 @@
         font-size: 15px;
     }
 
-    .starter .steps .steps-app .app .number {
-        width: 30px;
-        height: 30px;
+    .starter .steps .steps-app .app .app-style p {
+        font-size: 15px;
+        margin-bottom: 15px;
     }
+
+    .starter .steps .steps-app .app .app-style {
+        margin-right: 10px;
+    }
+
+
+    
+    .starter .steps .steps-app .app .number{
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+        padding: 6px;
+    }
+
 
     .starter .steps .steps-app a {
         border-radius: 8px;
