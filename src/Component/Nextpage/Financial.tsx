@@ -6,7 +6,7 @@ import { Exchange } from './Exchange'
 
 export const Financial:React.FunctionComponent = () => {
 
-    const currentDate = new Date().toLocaleTimeString()
+    // const currentDate = new Date().toLocaleTimeString()
 
     const wallet = () =>{
 
